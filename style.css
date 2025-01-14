@@ -200,23 +200,37 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  overflow: hidden;
+}
+
+.projects-list {
+  display: flex;
+  flex-direction: row;
 }
 
 .projects-card {
-  width: 50%;
-  height: 50%;
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid rgba(32, 252, 143, 0.4);
+  border-radius: 10px;
+  padding: 2px;
+  margin: 40px;
+  width: 700px;
+  box-shadow: rgba(32, 252, 143, 0.4) 5px 5px, rgba(32, 252, 143, 0.3) 10px 10px,
+    rgba(32, 252, 143, 0.2) 15px 15px, rgba(32, 252, 143, 0.1) 20px 20px,
+    rgba(32, 252, 143, 0.05) 25px 25px;
+  transition: transform 0.3s ease;
+}
+
+.projects-card:hover {
+  transform: scale(1.1);
 }
 
 .projects-card img {
   object-fit: contain;
   height: 100%;
   width: 100%;
-}
-.projects-card img:hover {
-  cursor: pointer;
-  transform: scale(1.2);
-  transition: ease 0.2s;
+  user-select: none;
 }
 
 /* Contact style */
