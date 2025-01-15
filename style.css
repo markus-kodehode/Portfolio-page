@@ -18,6 +18,7 @@
 
   /* Dark variant */
   --color1-dark: #26c375;
+  --color1-darker: #14874e;
 
   /* Nav */
   --navbar-height: 70px;
@@ -259,6 +260,8 @@ header {
   z-index: 2;
   font-size: 1.5rem;
   padding: 0;
+  user-select: none;
+  outline: none;
 }
 
 .slide-btn.left {
@@ -272,6 +275,26 @@ header {
 .slide-btn:hover {
   background-color: var(--color1-dark);
   color: var(--color4);
+}
+
+.carousel-dots {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.carousel-dots .dot {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin: 0 5px;
+  background-color: var(--color1);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-dots .dot.active {
+  background-color: var(--color1-darker);
 }
 
 /* Contact style */
