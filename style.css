@@ -287,14 +287,14 @@ header {
   width: 16px;
   height: 16px;
   margin: 0 5px;
-  background-color: var(--color1);
+  background-color: var(--color1-darker);
   border-radius: 50%;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .carousel-dots .dot.active {
-  background-color: var(--color1-darker);
+  background-color: var(--color1);
 }
 
 /* Contact style */
